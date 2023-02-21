@@ -9,10 +9,10 @@
 }
 
 
-* {
+*, *::before, *::after {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	box-sizing: inherit;
 }
 
 body {
@@ -22,6 +22,7 @@ body {
 	font-size: 1rem;
 	color: var(--clr-grey);
 	padding: 1.875rem;
+    box-sizing: border-box;
 }
 
 .header{
@@ -83,11 +84,11 @@ body {
 @keyframes moveInLeft {
     0%{
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-6.25rem);
     }
 
     80%{
-        transform: translateX(10px);
+        transform: translateX(.625rem);
     }
 
     100%{
@@ -99,11 +100,11 @@ body {
 @keyframes moveInRight {
     0%{
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(6.25rem);
     }
 
     80%{
-        transform: translateX(-10px);
+        transform: translateX(-0.625rem);
     }
 
     100%{
@@ -115,7 +116,7 @@ body {
 @keyframes moveInBottom {
     0%{
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(1.875rem);
     }
 
     100%{
